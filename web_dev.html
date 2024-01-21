@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development</title>
+    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+
+
+        h2 {
+            color:#49BEB7;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #49BEB7;
+        }
+
+        nav a img:hover {
+            transition: 0.3s ease;
+            transform: scale(1.11);
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 16px);
+            /* Adjust width and consider padding */
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            color: #fff
+        }
+
+        a {
+            text-decoration: none;
+            color:#ffffff
+        }
+
+        a:hover {
+            transition: 0.3s;
+            color:#49BEB7
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        footer p,
+        footer ul,
+        footer div {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .social-icons a:hover {
+            color: #49BEB7 ;
+            transform: scale(1.2);
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: #fff;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .service-item {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
+            <br>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+<main>
+
+    <section>
+        <h2>Web Development</h2>
+        <div class="container">
+            <p>Embarking on the journey of setting up a website for your business may seem challenging, but worry not— we're here to guide you through it.</p>
+            <p>We are committed to delivering nothing short of complete satisfaction to our clients. Your input is invaluable, and we strive to meet your expectations as we provide this service.</p>
+        </div>
+        <div class="container">
+            <img src="Web_dev_img.jpg" width="400px" height="200px">
+        </div>
+        <h2>How do we do it?</h2>
+        <div class="container">
+            <p>Empowered by the cutting-edge AI technology of GPT-4, we create a functional, user-friendly, and visually pleasing website tailored to your business needs. This is usually done in a small time frame two weeks</p>
+            <p>We'll handle every aspect for you, from securing a domain name and setting up a web server to crafting the website itself.</p>
+        </div>
+        <div class="container">
+            <img src="https://www.androidheadlines.com/wp-content/uploads/2023/03/GPT-4-logo-1420x799.webp" width="400x" hieght="200px">
+        </div>
+        <div class="container">
+            <h2>Who have we helped?</h2>
+            <p>Our first client was Seagrass gallery, a small local art gallery located in otaki beach New Zealand.</p>
+            <p>Since then we have had the pleasure of providing this service to serveral others including ... , ... and ...</p>
+        </div>
+        <div class="container">
+            <h2>Share your vision with us!</h2>
+            <p>Whether you desire a modern and flashy aesthetic, a minimalist design, or anything in between, please inform us before we dive into development.</p>
+        </div>
+    </section>
+    
+
+
+</section>
+  <!--Contact section-->
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+   
+</main>
+
+<!-- Footer section -->
+<footer>
+    <p>&copy; 2024 AgencyDigital. All rights reserved.</p> <!-- Replace with your company information -->
+    <ul class="social-icons">
+        <li><a href=" target="_blank>
+                <i class="fab fa-facebook"></i>
+            </a></li>
+        <li><a href="" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+        <li><a href="" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a></li>
+        <li><a href="" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a></li>
+    </ul>
+    <div id="copyright">
+        <a href="Termsofservice.html">Terms of service</a>
+        <a href="Privacy_policy.html">Privacy policy</a>
+    </div>
+</footer>
+
+</body>
+
+</html>
