@@ -15,7 +15,7 @@
             background-color: #000000;
         }
 
-        h1 {
+        h1, h3 {
             color: #49BEB7;
         }
 
@@ -29,7 +29,6 @@
             background-color: #000000;
             padding: 20px;
             text-align: center;
-            
         }
 
         nav a {
@@ -40,7 +39,6 @@
 
         nav a:hover {
             color: #49BEB7;
-            
         }
 
         nav a img:hover {
@@ -52,7 +50,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-bottom: 50px; /* Enlarged the margin */
+            margin-bottom: 50px;
         }
 
         .service-item {
@@ -78,7 +76,7 @@
 
         input,
         textarea {
-            width: calc(100% - 16px);
+            width: 100%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
@@ -158,15 +156,15 @@
     </nav>
 
     <main>
-        <div class="section" id="services">
+        <section id="services">
             <h1>Services</h1>
             <div class="service-container">
                 <div class="service-item">
                     <a href="web_dev.html">
-                        <img src="Web_dev_img.jpg" alt="web_dev_img">
+                        <img src="Web_dev_img.jpg" alt="Web Development Image">
                     </a>
                     <h3>Web Development</h3>
-                    <p>With the empowerment of the latest AI tech GPT-4, we create dynamic and responsive websites tailored to your business needs.</p>
+                    <p>Empower your business with dynamic and responsive websites using the latest AI tech GPT-4.</p>
                 </div>
                 <div class="service-item">
                     <a href="content_creation.html">
@@ -176,7 +174,7 @@
                     <p style="color:red;">Available 2025</p>
                 </div>
                 <div class="service-item">
-                    <a href="social_media_managment_page.html">
+                    <a href="social_media_management_page.html">
                         <img src="Social_media.jpg" alt="Social Media Management Image">
                     </a>
                     <h3>Social Media Management</h3>
@@ -185,37 +183,28 @@
             </div>
         </section>
 
-        <div class="section" id="full_package_subscription">
+        <section id="full_package_subscription">
             <h1>Exclusive Subscription</h1>
-            <p>If your intersted in an all in one solution, our full Package Subscription might be the way to go. Immerse yourself in the art of captivating Web Development, elevate your brand story with our stellar Content Creation, and effortlessly manage your online presence through our expert Social Media Management. This exclusive subscription offers you a seamless, all-in-one solution designed to maximize your impact in the digital landscape. Elevate your business journey, subscribe today, and embark on a path to unparalleled online success!</p>
+            <p>If you're interested in an all-in-one solution, our Full Package Subscription might be the way to go. Immerse yourself in the art of captivating Web Development, elevate your brand story with our stellar Content Creation, and effortlessly manage your online presence through our expert Social Media Management. This exclusive subscription offers you a seamless, all-in-one solution designed to maximize your impact in the digital landscape. Elevate your business journey, subscribe today, and embark on a path to unparalleled online success!</p>
             <!-- Add any additional content or call-to-action buttons here -->
         </section>
-        
 
-        <div class="section" id="our-mission">
+        <section id="our-mission">
             <h1>Our Mission</h1>
-            <p>At AgencyDigital we are driven by a singular mission: to empower businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, our mission is to be at the forefront of innovation, providing our clients with the tools and strategies they need to thrive in the digital realm.</p>
+            <p>At AgencyDigital, we are driven by a singular mission: to empower businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, our mission is to be at the forefront of innovation, providing our clients with the tools and strategies they need to thrive in the digital realm.</p>
         </section>
 
         <!-- Contact section -->
-        <div class="section" id="contact">
+        <section id="contact">
             <h1>Contact</h1>
-            <form
-  action="https://formspree.io/f/mrgnezoz"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-        </div>
+            <form action="https://formspree.io/f/mrgnezoz" method="POST">
+                <label for="email">Your email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Your message:</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
 
     <!-- Footer section -->
@@ -223,22 +212,14 @@
         <p>&copy; 2024 AgencyDigital. All rights reserved.</p>
         <!-- Replace with your company information -->
         <ul class="social-icons">
-            <li><a href="#" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a></li>
-            <li><a href="https://instagram.com/Agency_digital24" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a></li>
-            <li><a href="#" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a></li>
-            <li><a href="#" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul>
         <div id="copyright">
-            <a href="Termsofservice.html">Terms of service</a>
-            <a href="Privacy_policy.html">Privacy policy</a>
+            <a href="Termsofservice.html">Terms of Service</a>
+            <a href="Privacy_policy.html">Privacy Policy</a>
         </div>
     </footer>
 
