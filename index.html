@@ -25,26 +25,35 @@
             padding: 20px;
         }
 
-        nav {
-            background-color: #000000;
-            padding: 20px;
-            text-align: center;
-        }
+      nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; /* Adjust the margin to leave a larger gap */
+}
 
-        nav a:hover {
-            color: #49BEB7;
-        }
+nav a:hover {
+    color: #49BEB7;
+}
 
-        nav a img:hover {
-            transition: 0.3s ease;
-            transform: scale(1.11);
-        }
+nav a img {
+    transition: 0.3s ease;
+}
+
+nav a:hover img {
+    transform: scale(1.11);
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        margin: 0 10px; /* Adjust the margin for smaller screens */
+    }
+}
 
         .service-container {
             display: flex;
