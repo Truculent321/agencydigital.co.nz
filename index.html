@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
+    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        h1 {
+            color: #49BEB7;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #49BEB7;
+            
+        }
+
+        nav a img:hover {
+            transition: 0.3s ease;
+            transform: scale(1.11);
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px; /* Enlarged the margin */
+        }
+
+        .service-item {
+            width: 30%;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            color: #49BEB7;
+        }
+
+        .service-item:hover {
+            transition: 0.3s ease;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .service-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        a:hover {
+            transition: 0.3s;
+            color: #49BEB7;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        footer p,
+        footer ul,
+        footer div {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .social-icons a:hover {
+            color: #49BEB7;
+            transform: scale(1.2);
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .service-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
+            <br>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="section" id="services">
+            <h1>Services</h1>
+            <div class="service-container">
+                <div class="service-item">
+                    <a href="Web_dev.html">
+                        <img src="Web_dev_img.jpg" alt="web_dev_img">
+                    </a>
+                    <h3>Web Development</h3>
+                    <p>With the empowerment of the latest AI tech GPT-4, we create dynamic and responsive websites tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <a href="content_creation.html">
+                        <img src="Service_1.jpg" alt="Content Creation Image">
+                    </a>
+                    <h3>Content Creation</h3>
+                    <p style="color:red;">Available 2025</p>
+                </div>
+                <div class="service-item">
+                    <a href="social_media_management_page.html">
+                        <img src="Social_media.jpg" alt="Social Media Management Image">
+                    </a>
+                    <h3>Social Media Management</h3>
+                    <p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section" id="full_package_subscription">
+            <h1>Exclusive Subscription</h1>
+            <p>If your intersted in an all in one solution, our full Package Subscription might be the way to go. Immerse yourself in the art of captivating Web Development, elevate your brand story with our stellar Content Creation, and effortlessly manage your online presence through our expert Social Media Management. This exclusive subscription offers you a seamless, all-in-one solution designed to maximize your impact in the digital landscape. Elevate your business journey, subscribe today, and embark on a path to unparalleled online success!</p>
+            <!-- Add any additional content or call-to-action buttons here -->
+        </section>
+        
+
+        <div class="section" id="our-mission">
+            <h1>Our Mission</h1>
+            <p>At AgencyDigital we are driven by a singular mission: to empower businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, our mission is to be at the forefront of innovation, providing our clients with the tools and strategies they need to thrive in the digital realm.</p>
+        </section>
+
+        <!-- Contact section -->
+        <div class="section" id="contact">
+            <h1>Contact</h1>
+            <form action="" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 AgencyDigital. All rights reserved.</p>
+        <!-- Replace with your company information -->
+        <ul class="social-icons">
+            <li><a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+            <li><a href="https://instagram.com/Agency_digital24" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+            <li><a href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a></li>
+            <li><a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+        </ul>
+        <div id="copyright">
+            <a href="Termsofservice.html">Terms of service</a>
+            <a href="Privacy_policy.html">Privacy policy</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
