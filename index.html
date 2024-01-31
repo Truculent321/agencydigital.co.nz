@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
-    <meta name="description" content="Empower your business with digital solutions. Web development, content creation, and social media management services. Contact us for a free consultation.">
-    <meta property="og:title" content="Agency Digital - Digital Services for Small New Zealand Businesses">
-    <meta property="og:description" content="Empower your business with digital solutions. Web development, content creation, and social media management services. Contact us for a free consultation.">
-    <meta property="og:image" content="your_image_url">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- Add more metadata and favicon link if needed -->
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-     gtag('config', 'G-CKXB3BKCLN');
-</script>
+        gtag('config', 'G-CKXB3BKCLN');
+    </script>
+
     <style>
         body {
             margin: 0;
@@ -30,7 +28,7 @@
             background-color: #000000;
         }
 
-        h1, h3 {
+        h1, h2 {
             color: #49BEB7;
         }
 
@@ -164,8 +162,8 @@
 </head>
 
 <body>
-
     <nav>
+        <header>
         <div>
             <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
             <br>
@@ -173,61 +171,66 @@
             <a href="About.html">About</a>
             <a href="#contact">Contact</a>
         </div>
-    </nav>
+    </header>
+</nav>
+    
 
     <main>
-        <section id="our-mission">
+        <div id="our-mission">
             <h1>Our Mission</h1>
-            <p>At AgencyDigital, we are driven by a singular mission: to empower businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, our mission is to be at the forefront of innovation, providing our clients with the tools and strategies they need to thrive in the digital realm.</p>
-        </section>
+            <p>At AgencyDigital we make it our mission to empower startup businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, the need for an online prescense has become more than just advantages. providing our clients with the tools and strategies they need to thrive in the digital realm, We aim to make a positve impact.</p>
+        </div>
 
-        <section id="services">
-            <h1>Services</h1>
+        <div id="services">
+            <h2>Offered Services</h2>
+            <p>Our services cover everthing needed to help you establish an online prescense. Websites, content, and social media domintate in todays competitve market and we know that without having these things done correctly there is a massive loss of potential and oppurtunity.</p>
             <div class="service-container">
-                <div class="service-item">
+                <article class="service-item">
                     <a href="web_dev.html">
                         <img src="Web_dev_img.jpg" alt="Web Development Image">
                     </a>
                     <h3>Web Development</h3>
                     <p>Empower your business with dynamic and responsive websites created by us and SEO optimized by the latest AI model GPT-4.</p>
-                    <p style="color:green;">Free service</p>
-                </div>
-                <div class="service-item">
+                    <p style="color:green;">Free service available</p>
+                </article>
+                <article class="service-item">
                     <a href="content_creation.html">
                         <img src="Service_1.jpg" alt="Content Creation Image">
                     </a>
                     <h3>Content Creation</h3>
-                    <p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiests will film a short form or long form video for your business.</p>
-                    <p style="color:red;">Available 2025</p>
-                </div>
-                <div class="service-item">
+                    <p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiasts will film a short form or long-form video for your business.</p>
+                    <p style="color:red;">Currently unavailable</p>
+                </article>
+                <article class="service-item">
                     <a href="social_media_management_page.html">
                         <img src="Social_media.jpg" alt="Social Media Management Image">
                     </a>
                     <h3>Social Media Management</h3>
                     <p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
-                    <p style="color:green;">Free service</p>
-                </div>
+                    <p style="color:red;">Currently unavailable</p>
+                </article>
             </div>
-        </section>
+        </div>
 
         <!-- Contact section -->
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Let us know if your interested in our services and we will be in touch with you with a follow up email with further detail.</p>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>For any questions and enquiries plese feel free to get in touch with us.</p>
             <form action="https://formspree.io/f/mrgnezoz" method="POST">
                 <label for="email">Your email:</label>
                 <input type="email" name="email" id="email" required>
+                <label for="phone">Your Phone number:</label>
+                <input type="phone" name="phone" id="phone" required>
                 <label for="message">Your message:</label>
                 <textarea name="message" id="message" required></textarea>
                 <button type="submit">Send</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 AgencyDigital. All rights reserved.</p>
+        <h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
         <!-- Replace with your company information -->
         <ul class="social-icons">
             <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -240,6 +243,13 @@
             <a href="Privacy_policy.html">Privacy Policy</a>
         </div>
     </footer>
+
+    <!-- External resources -->
+    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
+    <script>
+        // Google tag script goes here
+    </script>
 
 </body>
 
