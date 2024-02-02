@@ -11,13 +11,6 @@
     <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-CKXB3BKCLN');
-    </script>
 
     <style>
         body {
@@ -158,6 +151,26 @@
                 height: auto;
             }
         }
+        .client-container {
+            text-align: left;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .client-container:hover {
+            transform: scale(1.050);
+            transition: 0.3s ease;
+        }
+
+        .client img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .client p {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -165,7 +178,7 @@
     <nav>
         <header>
         <div>
-            <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
+            <a href="index.html"><img src="images/Logo.png" alt="Agency Digital Logo"></a>
             <br>
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
@@ -186,24 +199,24 @@
             <p>Our services cover everthing needed to help you establish an online prescense. Websites, content, and social media domintate in todays competitve market and we know that without having these things done correctly there is a massive loss of potential and oppurtunity.</p>
             <div class="service-container">
                 <article class="service-item">
-                    <a href="web_dev.html">
-                        <img src="Web_dev_img.jpg" alt="Web Development Image">
+                    <a href="web.html">
+                        <img src="images/Web_dev_img.jpg" alt="Web Development Image">
                     </a>
                     <h3>Web Development</h3>
                     <p>Empower your business with dynamic and responsive websites created by us and SEO optimized by the latest AI model GPT-4.</p>
                     <p style="color:green;">Free service available</p>
                 </article>
                 <article class="service-item">
-                    <a href="content_creation.html">
-                        <img src="Service_1.jpg" alt="Content Creation Image">
+                    <a href="content.html">
+                        <img src="images/Service_1.jpg" alt="Content Creation Image">
                     </a>
                     <h3>Content Creation</h3>
                     <p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiasts will film a short form or long-form video for your business.</p>
                     <p style="color:red;">Currently unavailable</p>
                 </article>
                 <article class="service-item">
-                    <a href="social_media_management_page.html">
-                        <img src="Social_media.jpg" alt="Social Media Management Image">
+                    <a href="social.html">
+                        <img src="Images/Social_media.jpg" alt="Social Media Management Image">
                     </a>
                     <h3>Social Media Management</h3>
                     <p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
@@ -212,11 +225,22 @@
             </div>
         </div>
 
+        <div id="previous-clients">
+            <h2>Previous Clients</h2>
+            <p>Join our satisfied clients who've experienced transformative outcomes.</p>
+    
+            <div class="client-container">
+                <div class="client">
+                    <a href="https://www.seagrassgallery.co.nz"><img src="Logo.png" width="500px" alt="Seagrass Gallery"></a>
+                </div>
+            </div>
+        </div>
+
         <!-- Contact section -->
         <div id="contact">
             <h2>Contact</h2>
             <p>For any questions and enquiries plese feel free to get in touch with us.</p>
-            <form action="https://formspree.io/f/mrgnezoz" method="POST">
+            <form action="https://formspree.io/f/xrgnenro" method="POST">
                 <label for="email">Your email:</label>
                 <input type="email" name="email" id="email" required>
                 <label for="phone">Your Phone number:</label>
@@ -248,8 +272,38 @@
     <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
     <script>
-        // Google tag script goes here
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CKXB3BKCLN');
     </script>
+      <script>
+        let currentIndex = 0;
+        const clients = document.querySelectorAll('.client-container');
+
+        function showClient(index) {
+            clients.forEach(client => client.style.display = 'none');
+            clients[index].style.display = 'block';
+        }
+
+        function nextClient() {
+            currentIndex = (currentIndex + 1) % clients.length;
+            showClient(currentIndex);
+        }
+
+        function prevClient() {
+            currentIndex = (currentIndex - 1 + clients.length) % clients.length;
+            showClient(currentIndex);
+        }
+
+        // Initial display
+        showClient(currentIndex);
+
+        // Set interval for automatic slideshow (adjust the time in milliseconds)
+        setInterval(nextClient, 10000); // Change 5000 to your desired interval
+    </script>
+    
 
 </body>
 
