@@ -2,308 +2,314 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
-    <!-- Add more metadata and favicon link if needed -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
+<!-- Add more metadata and favicon link if needed -->
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: #ffffff;
-            background-color: #000000;
-        }
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+color: #ffffff;
+background-color: #000000;
+}
 
-        h1, h2 {
-            color: #49BEB7;
-        }
+h1, h2 {
+color: #019ee3;
+}
 
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
 
-        nav {
-            background-color: #000000;
-            padding: 20px;
-            text-align: center;
-        }
+nav {
+background-color: #000000;
+padding: 20px;
+text-align: center;
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 15px;
+}
 
-        nav a:hover {
-            color: #49BEB7;
-        }
+nav a:hover {
+color: #019ee3;
+}
 
-        nav a img:hover {
-            transition: 0.3s ease;
-            transform: scale(1.11);
-        }
+nav a img {
+max-height: 150px;
 
-        .service-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
+}
 
-        .service-item {
-            width: 30%;
-            margin: 20px 0;
-            text-align: center;
-        }
+nav a img:hover {
+transition: 0.3s ease;
+transform: scale(1.050);
+}
 
-        .service-item h3 {
-            color: #49BEB7;
-        }
+.service-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
 
-        .service-item:hover {
-            transition: 0.3s ease;
-            transform: scale(1.11);
-            cursor: pointer;
-        }
+.service-item {
+width: 30%;
+margin: 20px 0;
+text-align: center;
+}
 
-        .service-item img {
-            width: 100%;
-            border-radius: 8px;
-        }
+.service-item h3 {
+color: #019ee3;
+}
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+.service-item:hover {
+transition: 0.3s ease;
+transform: scale(1.11);
+cursor: pointer;
+}
 
-        label {
-            color: #fff;
-        }
+.service-item img {
+width: 100%;
+border-radius: 8px;
+}
 
-        a {
-            text-decoration: none;
-            color: #ffffff;
-        }
+input,
+textarea {
+width: 100%;
+padding: 8px;
+margin-bottom: 16px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
 
-        a:hover {
-            transition: 0.3s;
-            color: #49BEB7;
-        }
+label {
+color: #fff;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            position: relative;
-        }
+a {
+text-decoration: none;
+color: #ffffff;
+}
 
-        footer p,
-        footer ul,
-        footer div {
-            margin: 0 auto;
-            max-width: 800px;
-        }
+a:hover {
+transition: 0.3s;
+color: #019ee3;
+}
 
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0;
-            text-align: center;
-        }
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 15px;
+position: relative;
+}
 
-        .social-icons a:hover {
-            color: #49BEB7;
-            transform: scale(1.2);
-        }
+footer p,
+footer ul,
+footer div {
+margin: 0 auto;
+max-width: 800px;
+}
 
-        .social-icons li {
-            display: inline-block;
-            margin: 0 10px;
-        }
+.social-icons {
+list-style: none;
+padding: 0;
+margin: 15px 0;
+text-align: center;
+}
 
-        .social-icons a {
-            font-size: 24px;
-            color: #fff;
-        }
+.social-icons a:hover {
+color: #019ee3;
+transform: scale(1.2);
+}
 
-        @media screen and (max-width: 768px) {
-            .service-item {
-                width: 100%;
-            }
+.social-icons li {
+display: inline-block;
+margin: 0 10px;
+}
 
-            nav a img {
-                max-width: 80%; /* Adjust the percentage as needed */
-                height: auto;
-            }
-        }
-        .client-container {
-            text-align: left;
-            margin-bottom: 20px;
-            display: none;
-        }
+.social-icons a {
+font-size: 24px;
+color: #fff;
+}
 
-        .client-container:hover {
-            transform: scale(1.050);
-            transition: 0.3s ease;
-        }
+@media screen and (max-width: 768px) {
+.service-item {
+width: 100%;
+}
 
-        .client img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
+nav a img {
+max-width: 80%; /* Adjust the percentage as needed */
+height: auto;
+}
+}
+.client-container {
+text-align: left;
+margin-bottom: 20px;
+display: none;
+}
 
-        .client p {
-            margin-top: 10px;
-        }
-    </style>
+.client-container:hover {
+transform: scale(1.050);
+transition: 0.3s ease;
+}
+
+.client img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.client p {
+margin-top: 10px;
+}
+</style>
 </head>
 
 <body>
-    <nav>
-        <header>
-        <div>
-            <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
-            <br>
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
+<nav>
+<header>
+<div>
+<a href="index.html"><img src="images/Logo.png" alt="Agency Digital Logo"></a>
+<br>
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="#contact">Contact</a>
+</div>
+</header>
 </nav>
-    
 
-    <main>
-        <div id="our-mission">
-            <h1>Our Mission</h1>
-            <p>At AgencyDigital we make it our mission to empower startup businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, the need for an online prescense has become more than just advantages. providing our clients with the tools and strategies they need to thrive in the digital realm, We aim to make a positve impact.</p>
-        </div>
 
-        <div id="services">
-            <h2>Offered Services</h2>
-            <p>Our services cover everthing needed to help you establish an online prescense. Websites, content, and social media domintate in todays competitve market and we know that without having these things done correctly there is a massive loss of potential and oppurtunity.</p>
-            <div class="service-container">
-                <article class="service-item">
-                    <a href="web.html">
-                        <img src="Web_dev_img.jpg" alt="Web Development Image">
-                    </a>
-                    <h3>Web Development</h3>
-                    <p>Empower your business with dynamic and responsive websites created by us and SEO optimized by the latest AI model GPT-4.</p>
-                    <p style="color:green;">Free service available</p>
-                </article>
-                <article class="service-item">
-                    <a href="content.html">
-                        <img src="Service_1.jpg" alt="Content Creation Image">
-                    </a>
-                    <h3>Content Creation</h3>
-                    <p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiasts will film a short form or long-form video for your business.</p>
-                    <p style="color:red;">Currently unavailable</p>
-                </article>
-                <article class="service-item">
-                    <a href="social.html">
-                        <img src="Social_media.jpg" alt="Social Media Management Image">
-                    </a>
-                    <h3>Social Media Management</h3>
-                    <p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
-                    <p style="color:red;">Currently unavailable</p>
-                </article>
-            </div>
-        </div>
+<main>
+<div id="our-mission">
+<h1>Our Mission</h1>
+<p>At AgencyDigital we make it our mission to empower startup businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, the need for an online prescense has become more than just advantageous, it's a neccecity. Providing our clients with the tools and strategies they need to thrive in the digital realm, We aim to make a positve impact.</p>
+</div>
 
-        <div id="previous-clients">
-            <h2>Previous Clients</h2>
-            <p>Join our satisfied clients who've experienced transformative outcomes.</p>
-    
-            <div class="client-container">
-                <div class="client">
-                    <a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" width="500px" alt="Seagrass Gallery"></a>
-                </div>
-            </div>
-        </div>
+<div id="services">
+<h2>Offered Services</h2>
+<p>Our services cover everthing needed to help you establish an online prescense. Websites, content, and social media domintate in todays competitve market and we know that without having these things done correctly there is a massive loss of potential and oppurtunity.</p>
+<div class="service-container">
+<article class="service-item">
+<a href="web.html">
+<img src="images/Web_dev_img.jpg" alt="Web Development Image">
+</a>
+<h3>Web Development</h3>
+<p>Empower your business with dynamic and responsive websites created by us and SEO optimized by the latest AI model GPT-4.</p>
+<p style="color:green;">Free service available</p>
+</article>
+<article class="service-item">
+<a href="content.html">
+<img src="images/Service_1.jpg" alt="Content Creation Image">
+</a>
+<h3>Content Creation</h3>
+<p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiasts will film a short form or long-form video for your business.</p>
+<p style="color:red;">Currently unavailable</p>
+</article>
+<article class="service-item">
+<a href="social.html">
+<img src="Images/Social_media.jpg" alt="Social Media Management Image">
+</a>
+<h3>Social Media Management</h3>
+<p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
+<p style="color:red;">Currently unavailable</p>
+</article>
+</div>
+</div>
 
-        <!-- Contact section -->
-        <div id="contact">
-            <h2>Contact</h2>
-            <p>For any questions and enquiries plese feel free to get in touch with us.</p>
-            <form action="https://formspree.io/f/xrgnenro" method="POST">
-                <label for="email">Your email:</label>
-                <input type="email" name="email" id="email" required>
-                <label for="phone">Your Phone number:</label>
-                <input type="phone" name="phone" id="phone" required>
-                <label for="message">Your message:</label>
-                <textarea name="message" id="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </main>
+<div id="previous-clients">
+<h2>Previous Clients</h2>
+<p>Join our satisfied clients who've experienced transformative outcomes.</p>
 
-    <!-- Footer section -->
-    <footer>
-        <h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
-        <!-- Replace with your company information -->
-        <ul class="social-icons">
-            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-        <div id="copyright">
-            <a href="Termsofservice.html">Terms of Service</a>
-            <a href="Privacy_policy.html">Privacy Policy</a>
-        </div>
-    </footer>
+<div class="client-container">
+<div class="client">
+<a href="https://www.seagrassgallery.co.nz"><img src="images/Seagrass_logo.png" width="500px" alt="seagrass gallery logo"></a>
+</div>
+</div>
+</div>
 
-    <!-- External resources -->
-    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<!-- Contact section -->
+<div id="contact">
+<h2>Contact</h2>
+<p>For any questions and enquiries plese feel free to get in touch with us.</p>
+<form action="https://formspree.io/f/xrgnenro" method="POST">
+<label for="email">Your email:</label>
+<input type="email" name="email" id="email" required>
+<label for="phone">Your Phone number:</label>
+<input type="phone" name="phone" id="phone" required>
+<label for="message">Your message:</label>
+<textarea name="message" id="message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
+</main>
 
-        gtag('config', 'G-CKXB3BKCLN');
-    </script>
-      <script>
-        let currentIndex = 0;
-        const clients = document.querySelectorAll('.client-container');
+<!-- Footer section -->
+<footer>
+<h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
+<!-- Replace with your company information -->
+<ul class="social-icons">
+<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+<li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.tiktok.com/@agency.digital6" traget="_blank"><i class="fab fa-tiktok"></i></a></li>
+</ul>
+<div id="copyright">
+<a href="terms.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+</div>
+</footer>
 
-        function showClient(index) {
-            clients.forEach(client => client.style.display = 'none');
-            clients[index].style.display = 'block';
-        }
+<!-- External resources -->
+<script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
 
-        function nextClient() {
-            currentIndex = (currentIndex + 1) % clients.length;
-            showClient(currentIndex);
-        }
+gtag('config', 'G-CKXB3BKCLN');
+</script>
+<script>
+let currentIndex = 0;
+const clients = document.querySelectorAll('.client-container');
 
-        function prevClient() {
-            currentIndex = (currentIndex - 1 + clients.length) % clients.length;
-            showClient(currentIndex);
-        }
+function showClient(index) {
+clients.forEach(client => client.style.display = 'none');
+clients[index].style.display = 'block';
+}
 
-        // Initial display
-        showClient(currentIndex);
+function nextClient() {
+currentIndex = (currentIndex + 1) % clients.length;
+showClient(currentIndex);
+}
 
-        // Set interval for automatic slideshow (adjust the time in milliseconds)
-        setInterval(nextClient, 10000); // Change 5000 to your desired interval
-    </script>
-    
+function prevClient() {
+currentIndex = (currentIndex - 1 + clients.length) % clients.length;
+showClient(currentIndex);
+}
+
+// Initial display
+showClient(currentIndex);
+
+// Set interval for automatic slideshow (adjust the time in milliseconds)
+setInterval(nextClient, 10000); // Change 5000 to your desired interval
+</script>
+
 
 </body>
 
