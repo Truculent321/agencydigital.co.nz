@@ -1,207 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web development</title>
-    <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-    <style>
-         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: #ffffff;
-            background-color: #000000;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web development</title>
+<script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+color: #ffffff;
+background-color: #000000;
+}
 
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
 
+h1, h2 {
+color: #019ee0;
+}
 
+nav {
+background-color: #000000;
+padding: 10px;
+text-align: center;
+}
 
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 15px;
+}
 
-        h2 {
-            color:#49BEB7;
-        }
+nav a:hover {
+color: #019ee0;
+}
 
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+nav a img {
+max-height: 150px;
+}
 
-        nav {
-            background-color: #000000;
-            padding: 10px;
-            text-align: center;
-        }
+nav a img:hover {
+transition: 0.3s ease;
+transform: scale(1.050);
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+input,
+textarea {
+width: calc(100% - 16px);
+padding: 8px;
+margin-bottom: 16px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
 
-        nav a:hover {
-            color: #49BEB7;
-        }
+label {
+color: #fff;
+}
 
-        nav a img:hover {
-            transition: 0.3s ease;
-            transform: scale(1.11);
-        }
+a {
+text-decoration: none;
+color: #ffffff;
+}
 
-        input,
-        textarea {
-            width: calc(100% - 16px);
-            /* Adjust width and consider padding */
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+a:hover {
+transition: 0.3s;
+color: #019ee0;
+}
 
-        label {
-            color: #fff
-        }
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 15px;
+position: relative;
+}
 
-        a {
-            text-decoration: none;
-            color:#ffffff
-        }
+footer p,
+footer ul,
+footer div {
+margin: 0 auto;
+max-width: 800px;
+}
 
-        a:hover {
-            transition: 0.3s;
-            color:#49BEB7
-        }
+.social-icons {
+list-style: none;
+padding: 0;
+margin: 15px 0;
+text-align: center;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            position: relative;
-        }
+.social-icons a:hover {
+color: #019ee0 ;
+transform: scale(1.2);
+}
 
-        footer p,
-        footer ul,
-        footer div {
-            margin: 0 auto;
-            max-width: 800px;
-        }
+.social-icons li {
+display: inline-block;
+margin: 0 10px;
+}
 
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0;
-            text-align: center;
-        }
+.social-icons a {
+font-size: 24px;
+color: #fff;
+}
 
-        .social-icons a:hover {
-            color: #49BEB7 ;
-            transform: scale(1.2);
-        }
+@media screen and (max-width: 768px) {
+.service-item {
+width: 100%;
+}
 
-        .social-icons li {
-            display: inline-block;
-            margin: 0 10px;
-        }
+nav a img {
+max-width: 80%;
+height: auto;
+}
+}
 
-        .social-icons a {
-            font-size: 24px;
-            color: #fff;
-        }
+.container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
 
+.container img {
+max-width: 40%; /* Adjust as needed */
+height: auto;
+margin-right: 20px; /* Adjust as needed */
+margin-left: 20px; /* Adjust as needed */
+}
 
-        @media screen and (max-width: 768px) {
-            .service-item {
-                width: 100%;
-            }
-
-            nav a img {
-                max-width: 80%; /* Adjust the percentage as needed */
-                height: auto;
-            }
-        }
-
-    </style>
+.container p {
+flex-grow: 1;
+}
+</style>
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="index.html"><img src="images/Logo.png" alt="Agency Digital Logo"></a>
-            <br>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    
+<nav>
+<div>
+<a href="index.html" alt="Agency Digital Logo"><img src="images/Logo.png" alt="Agency Digital Logo"></a>
+<br>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <main>
 
-    <section>
-        <h2>What does the service cover?</h2>
-        <div class="container">
-            <p>Setting up a website for your business may seem daunting at first, however we provide you with everything youll need to establish an online reputation.</p>
-            <p>This service offers you the oppurtunity to appear online in the best and most reputable way possible so that you can accumulate more customer traffic.</p>
-        </div>
-        <h2>How do we do it?</h2>
-        <div class="container">
-            <p>We will first find you a domain name of your choice and check its availabilty, then begin developing your website from scratch. This process typically takes around 7 - 14 days depending on the scale of the project.</p>
-            <p>With the assistance of the latest AI technology of GPT-4, we create a functional, user-friendly, and visually pleasing website tailored to your business needs.</p>
-            <p>The advantages Ai provides are second to none in any service, in any industry, anwhere in the world and thats why using GPT-4 for SEO (search engine optimization) will ensure that our service is providing you with the best chance of appearing at the top of the page when you customers search for you.</p>
-        </div>
-        <div class="container">
-            <h2>What is the price range?</h2>
-            <p>From Febuary to May of 2024 we charge no service fee as we are still trialing our services. All we ask of you is that you leave us a short reveiw on the quality of our service. This can be as simple as one scentence or a rating out of 10. This would be highly appreciated however it is not a mandatory act.</p>
-        </div>
-    </section>
-    
+<section>
+<figure class="container">
+<img src="images/Web_dev_img.jpg" alt="Service Cover Image">
+<figcaption>
+<h2>What does the service cover?</h2>
+<p>Setting up a website for your business may seem daunting at first, however, we provide you with everything you'll need to establish an online reputation.</p>
+</figcaption>
+</figure>
 
+<figure class="container">
+<figcaption>
+<h2>How do we do it?</h2>
+<p>We will first find you a domain name of your choice and check its availability, then begin developing your website from scratch. This process typically takes around 7 - 14 days depending on the scale of the project.</p>
+</figcaption>
+<img src="images/Img_1.png" alt="How We Do It Image">
+</figure>
+
+<figure class="container">
+<img src="images/Img_2.jpg" alt="Engaging Image 2">
+<figcaption>
+<h2>Why choose our service?</h2>
+<p>We work alongside AI to build your dream website and tailor it to your specific needs. We understand that AI is simply a tool to enhance our services and make your results the best they can possibly be.</p>
+</figcaption>
+</figure>
+<figure class="container">
+<figcaption>
+<h2>Share your Vision with us!</h2>
+<p>We aim to meet every one of our clients needs through continues communication. If you have an idea for your website theme let us know and we will work hard to get you the look that you want.</p>
+</figcaption>
+<img src="images/Img_3.jpeg" alt="Engaging Image 3">
+</figure>
 
 </section>
-   <!-- Contact section -->
-   <div id="contact">
-    <h2>Contact</h2>
-    <p>For any questions and enquiries plese feel free to get in touch with us.</p>
-    <form action="https://formspree.io/f/mrgnezoz" method="POST">
-        <label for="email">Your email:</label>
-        <input type="email" name="email" id="email" required>
-        <label for="phone">Your Phone number:</label>
-        <input type="phone" name="phone" id="phone" required>
-        <label for="message">Your message:</label>
-        <textarea name="message" id="message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+
+<!-- Contact section -->
+<div id="contact">
+<h2>Contact us today</h2>
+<p>If your interested in a website for your business please let us know the name of your business in the form below.</p>
+<form action="https://formspree.io/f/mrgnezoz" method="POST">
+<label for="email">Your email:</label>
+<input type="email" name="email" id="email" required>
+<label for="phone">Your Phone number:</label>
+<input type="tel" name="phone" id="phone" required>
+<label for="message">Your message:</label>
+<textarea name="message" id="message" required></textarea>
+<button type="submit">Send</button>
+</form>
 </div>
-   
+
 </main>
 
 <!-- Footer section -->
 <footer>
-    <p>&copy; 2024 AgencyDigital. All rights reserved.</p> <!-- Replace with your company information -->
-    <ul class="social-icons">
-        <li><a href=" target="_blank>
-                <i class="fab fa-facebook"></i>
-            </a></li>
-        <li><a href="" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a></li>
-        <li><a href="" target="_blank">
-                <i class="fab fa-youtube"></i>
-            </a></li>
-        <li><a href="" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a></li>
-    </ul>
-    <div id="copyright">
-        <a href="Termsofservice.html">Terms of service</a>
-        <a href="Privacy_policy.html">Privacy policy</a>
-    </div>
+<p>&copy; 2024 AgencyDigital. All rights reserved.</p>
+<ul class="social-icons">
+<li><a href="#" target="_blank">
+<i class="fab fa-facebook"></i>
+</a></li>
+<li><a href="#" target="_blank">
+<i class="fab fa-instagram"></i>
+</a></li>
+<li><a href="#" target="_blank">
+<i class="fab fa-youtube"></i>
+</a></li>
+<li><a href="#" target="_blank">
+<i class="fab fa-twitter"></i>
+</a></li>
+<li><a href="#" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a></li>
+</ul>
+<div id="copyright">
+<a href="Termsofservice.html">Terms of service</a>
+<a href="Privacy_policy.html">Privacy policy</a>
+</div>
 </footer>
 
 </body>
