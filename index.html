@@ -5,11 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
-<!-- Add more metadata and favicon link if needed -->
+
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
 
 <style>
@@ -31,7 +30,7 @@ margin: 0 auto;
 padding: 20px;
 }
 
-nav {
+nav,header{
 background-color: #000000;
 padding: 20px;
 text-align: center;
@@ -47,12 +46,12 @@ nav a:hover {
 color: #019ee3;
 }
 
-nav a img {
+header img {
 max-height: 150px;
 
 }
 
-nav a img:hover {
+header img:hover {
 transition: 0.3s ease;
 transform: scale(1.050);
 }
@@ -159,7 +158,7 @@ height: auto;
 .client-container {
 text-align: left;
 margin-bottom: 20px;
-display: none;
+display: inline;
 }
 
 .client-container:hover {
@@ -176,39 +175,54 @@ border-radius: 10px;
 .client p {
 margin-top: 10px;
 }
+#our-mission img {
+width: 100%;
+border-radius: 8px;
+}
+
+#services img {
+width: 100%;
+border-radius: 8px;
+}
+
+#previous-clients img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
 </style>
 </head>
 
 <body>
-<nav>
 <header>
 <div>
 <a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
-<br>
+</div>
+</header>
+<nav>
 <a href="index.html">Home</a>
 <a href="About.html">About</a>
 <a href="#contact">Contact</a>
-</div>
-</header>
 </nav>
-
 
 <main>
 <div id="our-mission">
-<h1>Our Mission</h1>
-<p>At AgencyDigital we make it our mission to empower startup businesses and individuals with digital solutions that elevate their online presence. In a world where the digital landscape is constantly evolving, the need for an online prescense has become more than just advantageous, it's a neccecity. Providing our clients with the tools and strategies they need to thrive in the digital realm, We aim to make a positve impact.</p>
+<h2>Our Mission</h2>
+<p>Welcome to Agency Digital, where we are committed to transforming your digital presence. Our mission is to blend creativity, innovation, and technical expertise to deliver cutting-edge solutions that elevate your brand. We are dedicated to helping you stand out in the digital landscape.</p>
+<img src="[Replace with your mission-related image]" alt="Mission Image">
 </div>
 
 <div id="services">
 <h2>Offered Services</h2>
-<p>Our services cover everthing needed to help you establish an online prescense. Websites, content, and social media domintate in todays competitve market and we know that without having these things done correctly there is a massive loss of potential and oppurtunity.</p>
+<p>Our services cover everything needed to help you establish an online presence. Websites, content, and social media dominate in today's competitive market, and we know that without having these things done correctly there is a massive loss of potential and opportunity.</p>
 <div class="service-container">
 <article class="service-item">
 <a href="web.html">
 <img src="Web_dev_img.jpg" alt="Web Development Image">
 </a>
 <h3>Web Development</h3>
-<p>Empower your business with dynamic and responsive websites created by us and SEO optimized by the latest AI model GPT-4.</p>
+<p>Unlock the full potential of your online presence with our expert web development services. From responsive design to seamless user experience, we craft websites that not only look great but also function flawlessly across devices.</p>
 <p style="color:green;">Free service available</p>
 </article>
 <article class="service-item">
@@ -216,7 +230,7 @@ margin-top: 10px;
 <img src="Service_1.jpg" alt="Content Creation Image">
 </a>
 <h3>Content Creation</h3>
-<p>Elevate your brand with our Content Creation Service. Our small team of qualified enthusiasts will film a short form or long-form video for your business.</p>
+<p>Captivate your audience with compelling content tailored to your brand. Our qualified team of video editors and camera operators work together to create content for your business.</p>
 <p style="color:red;">Currently unavailable</p>
 </article>
 <article class="service-item">
@@ -224,7 +238,7 @@ margin-top: 10px;
 <img src="Social_media.jpg" alt="Social Media Management Image">
 </a>
 <h3>Social Media Management</h3>
-<p>Unlock the full potential of your brand's online presence with our Social Media Management Service.</p>
+<p>Let us handle your social media presence, ensuring that your brand remains active and engaging across platforms. From strategic planning to content scheduling, we're here to elevate your social media game.</p>
 <p style="color:red;">Currently unavailable</p>
 </article>
 </div>
@@ -232,11 +246,10 @@ margin-top: 10px;
 
 <div id="previous-clients">
 <h2>Previous Clients</h2>
-<p>Join our satisfied clients who've experienced transformative outcomes.</p>
-
+<p>Join our satisfied clients who have experienced transformative outcomes.</p>
 <div class="client-container">
 <div class="client">
-<a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" width="500px" alt="seagrass gallery logo"></a>
+<a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" width="250px" alt="seagrass gallery logo"></a>
 </div>
 </div>
 </div>
@@ -244,7 +257,7 @@ margin-top: 10px;
 <!-- Contact section -->
 <div id="contact">
 <h2>Contact</h2>
-<p>For any questions and enquiries plese feel free to get in touch with us.</p>
+<p>Ready to take the next step? Contact us today to discuss how we can tailor our services to meet your unique needs. We're here to turn your digital aspirations into reality.</p>
 <form action="https://formspree.io/f/xrgnenro" method="POST">
 <label for="email">Your email:</label>
 <input type="email" name="email" id="email" required>
@@ -260,7 +273,6 @@ margin-top: 10px;
 <!-- Footer section -->
 <footer>
 <h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
-<!-- Replace with your company information -->
 <ul class="social-icons">
 <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
 <li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -274,9 +286,6 @@ margin-top: 10px;
 </div>
 </footer>
 
-<!-- External resources -->
-<script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
