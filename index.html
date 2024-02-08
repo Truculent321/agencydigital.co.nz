@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agency Digital - Digital Services for Small New Zealand Businesses</title>
-
-
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Web development</title>
 <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKXB3BKCLN"></script>
-
 <style>
 body {
 margin: 0;
@@ -20,22 +14,19 @@ color: #ffffff;
 background-color: #000000;
 }
 
-h1, h2 {
-color: #019ee3;
-}
-
 main {
-max-width: 1000px;
+max-width: 1200px;
 margin: 0 auto;
 padding: 20px;
-
 }
 
+h1, h2 {
+color: #019ee0;
+}
 
-
-nav,header{
+nav {
 background-color: #000000;
-padding: 20px;
+padding: 10px;
 text-align: center;
 }
 
@@ -46,57 +37,37 @@ margin: 0 15px;
 }
 
 nav a:hover {
-color: #019ee3;
+color: #019ee0;
 }
 
-header img {
+nav a img {
 max-height: 150px;
-
 }
 
-header img:hover {
+nav a img:hover {
 transition: 0.3s ease;
 transform: scale(1.050);
 }
 
-.service-container {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-bottom: 50px;
-}
-
-.service-item {
-width: 30%;
-margin: 20px 0;
-text-align: center;
-}
-
-.service-item h3 {
-color: #019ee3;
-}
-
-
-.service-item img {
-width: 100%;
-border-radius: 8px;
-}
-
-.service-item img:hover {
-transition: 0.3s ease;
-transform: scale(1.11);
-cursor: pointer;
-}
-
 input,
 textarea {
-width: 100%;
+width: calc(100% - 16px);
 padding: 8px;
 margin-bottom: 16px;
 box-sizing: border-box;
 border: 1px solid #ccc;
 border-radius: 4px;
 }
+
+@media screen and (max-width: 768px) {
+   input,
+   textarea {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+   }
+}
+
 
 label {
 color: #fff;
@@ -109,7 +80,7 @@ color: #ffffff;
 
 a:hover {
 transition: 0.3s;
-color: #019ee3;
+color: #019ee0;
 }
 
 footer {
@@ -135,7 +106,7 @@ text-align: center;
 }
 
 .social-icons a:hover {
-color: #019ee3;
+color: #019ee0 ;
 transform: scale(1.2);
 }
 
@@ -159,170 +130,128 @@ max-width: 80%; /* Adjust the percentage as needed */
 height: auto;
 }
 }
-.client-container {
-text-align: left;
-margin-bottom: 20px;
-display: inline;
+
+.container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 
-.client-container:hover {
-transform: scale(1.050);
-transition: 0.3s ease;
-}
-
-.client img {
-max-width: 100%;
+.container img {
+max-width: 30%; /* Adjust as needed */
 height: auto;
-border-radius: 10px;
+margin-right: 20px; /* Adjust as needed */
+margin-left: 20px; /* Adjust as needed */
 }
 
-.client p {
-margin-top: 10px;
-}
-#our-mission img {
-width: 100%;
-border-radius: 8px;
+.container p {
+flex-grow: 1;
 }
 
-#services img {
-width: 100%;
-border-radius: 8px;
+@media screen and (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .container img {
+      max-width: 100%;
+      margin-bottom: 20px; /* Add some space between image and text */
+   }
+
+   .container p {
+      flex-grow: 1;
+      margin-right: 20px; /* Add margin to the right for better spacing */
+      margin-left: 20px; /* Add margin to the left for better spacing */
+   }
 }
 
-#previous-clients img {
-max-width: 50%;
-height: auto;
-border-radius: 10px;
-}
 
 </style>
 </head>
-
 <body>
-<header>
-<div>
-<a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
-</div>
-</header>
 <nav>
+<div>
+<a href="index.html" alt="Agency Digital Logo"><img src="Logo.png" alt="Agency Digital Logo"></a>
+<br>
 <a href="index.html">Home</a>
-<a href="About.html">About</a>
+<a href="about.html">About</a>
 <a href="#contact">Contact</a>
+</div>
 </nav>
 
 <main>
-<div id="our-mission">
-<h2>Our Mission</h2>
-<p>Welcome to Agency Digital, where we are committed to transforming your digital presence. Our mission is to blend creativity, innovation, and technical expertise to deliver cutting-edge solutions that elevate your brand. We are dedicated to helping you stand out in the digital landscape.</p>
-<img src="our-mission.png" alt="Mission Image">
-</div>
-<br>
-<div id="services">
-<h2>Offered Services</h2>
-<p>Our services cover everything needed to help you establish an online presence. Websites, content, and social media dominate in today's competitive market, and we know that without having these things done correctly there is a massive loss of potential and opportunity.</p>
-<div class="service-container">
-<article class="service-item">
-<a href="web.html">
-<img src="Web_dev_img.jpg" alt="Web Development Image">
-</a>
-<h3>Web Development</h3>
-<p>Unlock the full potential of your online presence with our expert web development services. From responsive design to seamless user experience, we craft websites that not only look great but also function flawlessly across devices.</p>
-<p style="color:green;">Free service available</p>
-</article>
-<article class="service-item">
-<a href="content.html">
-<img src="Service_1.jpg" alt="Content Creation Image">
-</a>
-<h3>Content Creation</h3>
-<p>Captivate your audience with compelling content tailored to your brand. Our qualified team of video editors and camera operators work together to create content for your business.</p>
-<p style="color:red;">Currently unavailable</p>
-</article>
-<article class="service-item">
-<a href="social.html">
-<img src="Social_media.jpg" alt="Social Media Management Image">
-</a>
-<h3>Social Media Management</h3>
-<p>Let us handle your social media presence, ensuring that your brand remains active and engaging across platforms. From strategic planning to content scheduling, we're here to elevate your social media game.</p>
-<p style="color:red;">Currently unavailable</p>
-</article>
-</div>
-</div>
-<br>
-<div id="previous-clients">
-<h2>Previous Clients</h2>
-<p>Join our satisfied clients who have experienced transformative outcomes.</p>
-<div class="client-container">
-<div class="client">
-<a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" alt="seagrass gallery logo"></a>
-</div>
-</div>
-</div>
-<br>
+
+<section>
+<figure class="container">
+<img src="Web_dev_img.jpg" alt="Service Cover Image">
+<figcaption>
+<h2>What does the service cover?</h2>
+<p>Setting up a website for your business is important for your online reputation as it is a universal online gateway to your business.</p>
+<p>We provide you with everything you'll need to establish an online reputation for completly free through our web development service. This service covers the development, managment, and upload of your businesses website. </p>
+</figcaption>
+</figure>
+
+<figure class="container">
+<figcaption>
+<h2>How do we do it?</h2>
+<p>We will first find you a domain name of your choice and check its availability, after you find and pay for your desired domain name we begin developing your website from scratch. This process typically takes around 7 - 14 days depending on the scale of the project.</p>
+<p>Following this timeline we will upload your website online for you Via our Github pages account.</p>
+</figcaption>
+<img src="Img_1.png" alt="How We Do It Image">
+</figure>
+
+<figure class="container">
+<img src="Img_2.jpg" alt="Engaging Image 2">
+<figcaption>
+<h2>Why choose our service?</h2>
+<p>We work alongside AI to build your dream website and tailor it to your specific needs. We understand that AI is simply a tool to enhance our services and make your results the best they can possibly be.</p>
+</figcaption>
+</figure>
+<figure class="container">
+<figcaption>
+<h2>Share your Vision with us!</h2>
+<p>We aim to meet every one of our clients needs through continues communication. If you have an idea for your website theme let us know and we will work hard to get you the look that you want.</p>
+</figcaption>
+<img src="Img_3.jpeg" alt="Engaging Image 3">
+</figure>
+
+</section>
+
 <!-- Contact section -->
 <div id="contact">
-<h2>Contact</h2>
-<p>Ready to take the next step? Contact us today to discuss how we can tailor our services to meet your unique needs. We're here to turn your digital aspirations into reality.</p>
-<form action="https://formspree.io/f/xrgnenro" method="POST">
+<h2>Contact us today</h2>
+<p>If your interested in a website for your business please let us know the name of your business in the form below.</p>
+<form action="https://formspree.io/f/mrgnezoz" method="POST">
 <label for="email">Your email:</label>
 <input type="email" name="email" id="email" required>
 <label for="phone">Your Phone number:</label>
-<input type="phone" name="phone" id="phone" required>
+<input type="tel" name="phone" id="phone" required>
 <label for="message">Your message:</label>
 <textarea name="message" id="message" required></textarea>
 <button type="submit">Send</button>
 </form>
 </div>
+
 </main>
-<br>
+
 <!-- Footer section -->
 <footer>
-<h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
-<ul class="social-icons">
-<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-<li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
-<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-<li><a href="https://www.tiktok.com/@agency.digital6" traget="_blank"><i class="fab fa-tiktok"></i></a></li>
-</ul>
-<div id="copyright">
-<a href="terms.html">Terms of Service</a>
-<a href="privacy.html">Privacy Policy</a>
-</div>
-</footer>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-
-gtag('config', 'G-CKXB3BKCLN');
-</script>
-<script>
-let currentIndex = 0;
-const clients = document.querySelectorAll('.client-container');
-
-function showClient(index) {
-clients.forEach(client => client.style.display = 'none');
-clients[index].style.display = 'block';
-}
-
-function nextClient() {
-currentIndex = (currentIndex + 1) % clients.length;
-showClient(currentIndex);
-}
-
-function prevClient() {
-currentIndex = (currentIndex - 1 + clients.length) % clients.length;
-showClient(currentIndex);
-}
-
-// Initial display
-showClient(currentIndex);
-
-// Set interval for automatic slideshow (adjust the time in milliseconds)
-setInterval(nextClient, 10000); // Change 5000 to your desired interval
-</script>
-
+    <h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
+    <!-- Replace with your company information -->
+    <ul class="social-icons">
+    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.tiktok.com/@agency.digital6" traget="_blank"><i class="fab fa-tiktok"></i></a></li>
+    </ul>
+    <div id="copyright">
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+    </div>
+    </footer>
 
 </body>
 
