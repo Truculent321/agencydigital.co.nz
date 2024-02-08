@@ -59,6 +59,16 @@ border: 1px solid #ccc;
 border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+   input,
+   textarea {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+   }
+}
+
+
 label {
 color: #fff;
 }
@@ -138,6 +148,26 @@ margin-left: 20px; /* Adjust as needed */
 .container p {
 flex-grow: 1;
 }
+
+@media screen and (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .container img {
+      max-width: 100%;
+      margin-bottom: 20px; /* Add some space between image and text */
+   }
+
+   .container p {
+      flex-grow: 1;
+      margin-right: 20px; /* Add margin to the right for better spacing */
+      margin-left: 20px; /* Add margin to the left for better spacing */
+   }
+}
+
+
 </style>
 </head>
 <body>
