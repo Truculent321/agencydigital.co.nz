@@ -160,29 +160,37 @@ height: auto;
 }
 
 .client-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
 text-align: left;
 margin-bottom: 20px;
-display: inline;
 }
 
-.client-container:hover {
-transform: scale(1.050);
-transition: 0.3s ease;
+.client {
+width: 100%; /* Adjust the width as needed */
 }
 
 .client img {
-max-width: 100%;
+max-width: 50%;
 height: auto;
 border-radius: 10px;
 }
+
+.client img:hover {
+transition: 0.3s ease;
+transform: scale(1.11);
+cursor: pointer;
+
+}
+
 
 .client p {
 margin-top: 10px;
 }
 
 #our-mission img,
-#services img,
-#previous-clients img {
+#services img {
 max-width: 100%;
 border-radius: 8px;
 }
@@ -242,17 +250,11 @@ border-radius: 8px;
 <h2>Previous Clients</h2>
 <p>Join our satisfied clients who have experienced transformative outcomes.</p>
 <div class="client-container">
-    <div class="client">
-        <a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" alt="seagrass gallery logo"></a>
-    </div>
-</div>
-
-<div class="video-container">
-    <video controls width="100%" height="auto">
-        <source src="Seagrass_overveiw.mp4" type="video/mp4">
-    </video>
+<div class="client">
+<a href="web.html"><img src="Seagrass_logo.png" alt="seagrass gallery logo"></a>
 </div>
 </section>
+
 
 <br>
 <!-- Contact section -->
