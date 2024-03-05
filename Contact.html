@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact page - AgencyDgitial</title>
+<script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+color: #ffffff;
+background-color: #000000;
+}
+
+
+h1, h2 {
+color: #019ee0;
+}
+
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
+
+nav, header {
+background-color: #000000;
+padding: 20px;
+text-align: center;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 15px;
+}
+
+nav a:hover {
+color: #019ee0;
+}
+
+header img {
+max-height: 150px;
+
+}
+
+header img:hover {
+transition: 0.3s ease;
+transform: scale(1.050);
+}
+
+input,
+textarea {
+width: calc(100% - 16px);
+/* Adjust width and consider padding */
+padding: 8px;
+margin-bottom: 16px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+label {
+color: #fff
+}
+
+a {
+text-decoration: none;
+color:#ffffff
+}
+
+a:hover {
+transition: 0.3s;
+color:#019ee0
+}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 15px;
+position: relative;
+}
+
+footer p,
+footer ul,
+footer div {
+margin: 0 auto;
+max-width: 800px;
+}
+
+.social-icons {
+list-style: none;
+padding: 0;
+margin: 15px 0;
+text-align: center;
+}
+
+.social-icons a:hover {
+color: #019ee0 ;
+transform: scale(1.2);
+}
+
+.social-icons li {
+display: inline-block;
+margin: 0 10px;
+}
+
+.social-icons a {
+font-size: 24px;
+color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+.service-item {
+width: 100%;
+}
+
+nav a img {
+max-width: 80%; /* Adjust the percentage as needed */
+height: auto;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<a href="index.html"><img src="Logo.png" alt="Agency Digital Logo"></a>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Contact section -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Ready to take the next step?</p>
+<p>Contact us today to discuss how we can tailor our services to meet your unique needs</p>
+<form action="https://formspree.io/f/xrgnenro" method="POST">
+<label for="email">Your email:</label>
+<input type="email" name="email" id="email" required>
+<label for="phone">Your Phone number:</label>
+<input type="phone" name="phone" id="phone" required>
+<label for="message">Your message:</label>
+<textarea name="message" id="message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+</body>
+</html>
+
+
+
