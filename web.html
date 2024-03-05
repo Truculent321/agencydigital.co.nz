@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web development</title>
+<title>Agency Digital</title>
+<link rel="stylesheet" href="styles.css">
 <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
 <style>
 body {
 margin: 0;
 padding: 0;
 font-family: 'Arial', sans-serif;
-color: #ffffff;
-background-color: #000000;
-}
-
-main {
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
+color: #fff;
+background-color: #000;
 }
 
 h1, h2 {
-color: #019ee0;
+color: #019ee3;
 }
 
-nav, header {
-background-color: #000000;
-padding: 20px;
+header,
+nav,
+footer {
+background-color: #000;
+color: #fff;
 text-align: center;
+padding: 20px;
+}
+
+header img {
+max-height: 175px;
+}
+
+header img:hover {
+transition: 0.3s ease;
+transform: scale(1.05);
 }
 
 nav a {
@@ -40,47 +48,70 @@ nav a:hover {
 color: #019ee0;
 }
 
-header img {
-max-height: 150px;
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
 }
 
-header img:hover {
-transition: 0.3s ease;
-transform: scale(1.050);
+.container {
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 
-input,
-textarea {
-width: calc(100% - 16px);
-padding: 8px;
-margin-bottom: 16px;
-box-sizing: border-box;
-border: 1px solid #ccc;
-border-radius: 4px;
+div.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
-@media screen and (max-width: 768px) {
-input,
-textarea {
-width: 100%;
-margin-right: 0;
-margin-left: 0;
-}
+.container img {
+max-width: 30%;
+height: auto;
+margin-right: 20px;
+margin-left: 20px;
 }
 
-
-label {
-color: #fff;
+.container p {
+flex-grow: 1;
 }
 
-a {
+#service-status {
+text-align: center;
+background-color: green;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.button {
+background-color: green;
+border: none;
+border-radius: 10px;
+color: white;
+padding: 16px 32px;
+text-align: center;
 text-decoration: none;
-color: #ffffff;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a:hover {
-transition: 0.3s;
-color: #019ee0;
+.button:hover {
+transform: scale(1.1);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -91,13 +122,6 @@ padding: 15px;
 position: relative;
 }
 
-footer p,
-footer ul,
-footer div {
-margin: 0 auto;
-max-width: 800px;
-}
-
 .social-icons {
 list-style: none;
 padding: 0;
@@ -106,7 +130,7 @@ text-align: center;
 }
 
 .social-icons a:hover {
-color: #019ee0 ;
+color: #019ee0;
 transform: scale(1.2);
 }
 
@@ -120,110 +144,31 @@ font-size: 24px;
 color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-.service-item {
-width: 100%;
+a:hover {
+transition: 0.3s;
+color: #019ee3;
 }
 
-nav a img {
-max-width: 80%; /* Adjust the percentage as needed */
-height: auto;
+footer a {
+  text-decoration: none;
+  color:white
 }
-}
-
-.container {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-}
-
-.container img {
-max-width: 30%; /* Adjust as needed */
-height: auto;
-margin-right: 20px; /* Adjust as needed */
-margin-left: 20px; /* Adjust as needed */
-}
-
-.container p {
-flex-grow: 1;
-}
-
-@media screen and (max-width: 768px) {
-.container {
-flex-direction: column;
-align-items: center;
-}
-
-.container img {
-max-width: 100%;
-margin-bottom: 20px; /* Add some space between image and text */
-}
-
-.container p {
-flex-grow: 1;
-margin-right: 20px; /* Add margin to the right for better spacing */
-margin-left: 20px; /* Add margin to the left for better spacing */
-}
-}
-#service-status {
-   text-align:center;
-   background-color: green;
-}
-
-.client-container {
-display: flex;
-align-items: center;
-justify-content: space-between;
-text-align: left;
-margin-bottom: 20px;
-}
-
-.client {
-width: 100%; /* Adjust the width as needed */
-}
-
-.video-container {
-width: 100%; /* Adjust the width as needed */
-}
-
-.client img {
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-}
-
-.client img:hover {
-transition: 0.3s ease;
-transform: scale(1.050);
-cursor: pointer;
-
-}
-
-.video-container video {
-max-width: 100%;
-border-radius: 8px;
-}
-
-
-.client p {
-margin-top: 10px;
-}
-
 
 </style>
 </head>
+
 <body>
 
 <header>
 <a href="index.html" alt="Agency Digital Logo"><img src="Logo.png" alt="Agency Digital Logo"></a>
 </header>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="#contact">Contact</a>
-</div>
 </nav>
+
 <div class="container" id="service-status">
 <p>Free service currently available</p>
 </div>
@@ -234,89 +179,62 @@ margin-top: 10px;
 <figure class="container">
 <img src="Web_dev_img.jpg" alt="Service Cover Image">
 <figcaption>
-<h2>What does the service cover?</h2>
-<p>Are you a new business looking to establish a powerful online presence without breaking the bank? Our free web development service is designed just for you. We offer a comprehensive solution that covers everything from designing a visually appealing website to implementing essential functionalities. This service is our way of supporting emerging businesses by providing a professional online platform that leaves a lasting impression on your audience.</p>
+<h2>Establish and online presence</h2>
+<p>Our free web development service is tailored for new businesses seeking a robust online presence without the hefty price tag. We provide a comprehensive solution, from designing visually appealing websites to implementing essential functionalities, supporting emerging businesses with a professional online platform that leaves a lasting impression on your audience.</p>
+</figcaption>
+</figure>
+
+<section>
+<figure class="container">
+<img src="Img_2.jpg" alt="Service Cover Image">
+<figcaption>
+<h2>What sets us apart?</h2>
+<p>not only do we enhance our development process through the use of Ai, we pride ourselves on delivering more than just a website; we provide a digital solution that propels your business forward, and our commitment to supporting new businesses drives us.</p>
 </figcaption>
 </figure>
 
 <figure class="container">
+<img src="Img_1.png">
 <figcaption>
 <h2>How do we do it?</h2>
-<p>Wondering how we can offer a high-quality web development service for free? Our commitment to supporting new businesses drives us. We invest our expertise and utilize the latest technologies to ensure your website stands out. Our team works closely with you, understanding your unique needs, and delivering a customized website that reflects your brand. Through transparent communication and a collaborative approach, we aim to make the web development process seamless and enjoyable. </p>
-</figcaption>
-<img src="Img_1.png" alt="How We Do It Image">
-</figure>
-
-<figure class="container">
-<img src="Img_2.jpg" alt="Engaging Image 2">
-<figcaption>
-<h2>Why choose our service?</h2>
-<p>What sets our web development service apart? At AgencyDigital, not only do we enhance our development process through the use of Ai, we pride ourselves on delivering more than just a website; we provide a digital solution that propels your business forward. Here are a few reasons to choose our service:</p>
-<ul>
-   <li style="color:#019ee0">Affordability:</li><p>As a new client, enjoy a professional website at no cost.</p>
-   <li style="color:#019ee0">Customization:</li><p>Tailored solutions that match your business objectives.</p>
-   <li style="color:#019ee0">Communication:</li><p>Transparent and open lines of communication throughout the project.</p>
-   <li style="color:#019ee0">Quality:</li><p>Rigorous testing and quality assurance for a flawless end product.</p>
-   <li style="color:#019ee0">Support:</li><p>Post-launch support and maintenance to keep your website running smoothly.</p>
-</ul>
+<p>Here at Agency Digital We invest our expertise and utilize the latest technologies to ensure your website stands out. Through transparent communication and a collaborative approach, we aim to make the web development process seamless and enjoyable.</p>
+<p>Step 1:  The websites code is developed over the course of 7 days.</p>
+<p>Step 2:  We allocate your domain name to the internet and upload the code.</p>
+<p>Step 3:  We contact you Via Email with a link to your brand new website.</p>
 </figcaption>
 </figure>
-<figure class="container">
-<figcaption>
-<h2>Share your Vision with us!</h2>
-<p>Embarking on your business journey is exciting, and we want to be a part of it. Share your vision with us, and let's collaborate on building a website that not only aligns with your goals but also sets the stage for your success. Our free web development service is more than just code; it's a partnership focused on establishing trust and contributing to the growth of your new venture. Together, let's make your online presence remarkable without the financial burden.</p>
-</figcaption>
-<img src="Img_3.jpeg" alt="Engaging Image 3">
-</figure>
 
+<div class="container">
+  <h2>Why Agency Digital?</h2>
+    <ul>
+      <li style="color:#019ee0">Affordability:</li><p>As a new client, enjoy a professional website at no cost.</p>
+      <li style="color:#019ee0">Customization:</li><p>Tailored solutions that match your business objectives.</p>
+      <li style="color:#019ee0">Communication:</li><p>Transparent and open lines of communication throughout the project.</p>
+      <li style="color:#019ee0">Quality:</li><p>Rigorous testing and quality assurance for a flawless end product.</p>
+      <li style="color:#019ee0">Support:</li><p>Post-launch support and maintenance to keep your website running smoothly.</p>
+    </ul>
+</div>
 
+<div class="button-container">
+<a href="Contact.html"><button class="button" style="vertical-align:middle"><span>Get your Website</span></button></a>
+</div>
+</section>
+
+<!-- ... (other sections) -->
+
+<section id="contact">
+<!-- ... (contact form) -->
 </section>
 
 <div id="previous-clients">
-   <h2>Previous Clients</h2>
-   <p>Join our satisfied clients who have experienced transformative outcomes.</p>
-   <div class="client-container">
-   <div class="client">
-   <a href="https://www.seagrassgallery.co.nz"><img src="Seagrass_logo.png" alt="seagrass gallery logo"></a>
-   </div>
-   <div class="video-container">
-   <video controls width="100%" height="auto">
-       <source src="Seagrass_overveiw.mp4" type="video/mp4">
-   </video>
-   </div>
+<!-- ... (previous clients) -->
 </div>
-
-</div>
-
-
-
-<!-- Contact section -->
-<div id="contact">
-<h2>Contact us today</h2>
-<p>If your interested in a website for your business please let us know the name of your business in the form below.</p>
-<form action="https://formspree.io/f/mrgnezoz" method="POST">
-<label for="email">Your email:</label>
-<input type="email" name="email" id="email" required>
-<label for="phone">Your Phone number:</label>
-<input type="tel" name="phone" id="phone" required>
-<label for="message">Your message:</label>
-<textarea name="message" id="message" required></textarea>
-<button type="submit">Send</button>
-</form>
-</div>
-
 </main>
 
-<!-- Footer section -->
 <footer>
 <h4>&copy; 2024 AgencyDigital. All rights reserved.</h4>
-<!-- Replace with your company information -->
 <ul class="social-icons">
-<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-<li><a href="https://instagram.com/Agency_digital24" target="_blank"><i class="fab fa-instagram"></i></a></li>
-<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-<li><a href="https://www.tiktok.com/@agency.digital6" traget="_blank"><i class="fab fa-tiktok"></i></a></li>
+<!-- ... (social icons) -->
 </ul>
 <div id="copyright">
 <a href="terms.html">Terms of Service</a>
