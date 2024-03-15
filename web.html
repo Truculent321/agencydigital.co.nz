@@ -63,10 +63,10 @@ justify-content: space-between;
 }
 
 div.container {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
 
 }
 
@@ -84,8 +84,8 @@ flex-grow: 1;
 #service-status {
 text-align: center;
 background-color: green;
-padding: 10px;
 margin-bottom: 20px;
+height: 35px;
 }
 
 .button-container {
@@ -150,10 +150,26 @@ color: #019ee3;
 }
 
 footer a {
-  text-decoration: none;
-  color:white
+text-decoration: none;
+color:white
 }
 
+.client {
+width: 100%; /* Adjust the width as needed */
+}
+
+.client img {
+max-width: 30%;
+height: 200px;
+border-radius: 10px;
+}
+
+.client img:hover {
+transition: 0.3s ease;
+transform: scale(1.11);
+cursor: pointer;
+
+}
 </style>
 </head>
 
@@ -204,15 +220,33 @@ footer a {
 </figcaption>
 </figure>
 
+<figure class="container">
+<img src="domain-id-1.png">
+<figcaption>
+<h2>Where do i get my domain name?</h2>
+<p>You can purchase a domain name through a domain registrar, Some of the domain registrars we recommend are linked below for your convenience however feel free to source out your own.</p>
+</figcaption>
+</figure>
+
+<section id="domain-registrars">
+<h2>Affordable registrars</h2>
+<div class="client-container">
+<div class="client">
+<a href="https://www.crazydomains.com/"><img src="CD_logo.jpg" alt="Crazydomains logo"></a>
+<a href="https://www.freeparking.co.nz/"><img src="FP_logo.jpg" alt="Freeparking logo"></a>
+<a href="https://domainsdirect.nz/"><img src="DD_logo.png" alt="Domains-direct logo"></a>
+</div>
+</section>
+
 <div class="container">
-  <h2>Why Agency Digital?</h2>
-    <ul>
-      <li style="color:#019ee0">Affordability:</li><p>As a new client, enjoy a professional website at no cost.</p>
-      <li style="color:#019ee0">Customization:</li><p>Tailored solutions that match your business objectives.</p>
-      <li style="color:#019ee0">Communication:</li><p>Transparent and open lines of communication throughout the project.</p>
-      <li style="color:#019ee0">Quality:</li><p>Rigorous testing and quality assurance for a flawless end product.</p>
-      <li style="color:#019ee0">Support:</li><p>Post-launch support and maintenance to keep your website running smoothly.</p>
-    </ul>
+<h2>Why Agency Digital?</h2>
+<ul>
+<li style="color:#019ee0">Affordability:</li><p>As a new client, enjoy a professional website at no cost.</p>
+<li style="color:#019ee0">Customization:</li><p>Tailored solutions that match your business objectives.</p>
+<li style="color:#019ee0">Communication:</li><p>Transparent and open lines of communication throughout the project.</p>
+<li style="color:#019ee0">Quality:</li><p>Rigorous testing and quality assurance for a flawless end product.</p>
+<li style="color:#019ee0">Support:</li><p>Post-launch support and maintenance to keep your website running smoothly.</p>
+</ul>
 </div>
 
 <div class="button-container">
