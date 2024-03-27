@@ -8,8 +8,12 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <script src="https://kit.fontawesome.com/b11d8f09e2.js" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ET0CDLCND"></script>
-<script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+dataLayer.push(arguments);
+}
 gtag('js', new Date());
 gtag('config', 'G-7ET0CDLCND');
 </script>
@@ -22,7 +26,8 @@ color: #ffffff;
 background-color: #000000;
 }
 
-h1, h2 {
+h1,
+h2 {
 color: #019ee3;
 }
 
@@ -38,7 +43,8 @@ margin: 0 auto;
 padding: 20px;
 }
 
-nav, header {
+nav,
+header {
 background-color: #000000;
 padding: 20px;
 text-align: center;
@@ -58,11 +64,6 @@ header img {
 max-height: 175px;
 }
 
-header img:hover {
-transition: 0.3s ease;
-transform: scale(1.050);
-}
-
 .service-container {
 display: flex;
 justify-content: space-around;
@@ -80,16 +81,28 @@ text-align: center;
 color: #019ee3;
 }
 
+.service-item .service-content {
+padding: 8px;
+}
+
+.service-item .service-image-container {
+border: 2px solid #019ee3;
+border-radius: 8px;
+overflow: hidden;
+transition: border-color 0.3s ease;
+}
+
+.service-item:hover .service-image-container {
+border-color: #ffffff;
+cursor: pointer;
+transform:scale(1.11);
+transition: 0.3s ease;
+}
 
 .service-item img {
 width: 100%;
+height: 150px;
 border-radius: 8px;
-}
-
-.service-item img:hover {
-transition: 0.3s ease;
-transform: scale(1.11);
-cursor: pointer;
 }
 
 input,
@@ -152,7 +165,8 @@ width: 100%;
 }
 
 nav a img {
-max-width: 80%; /* Adjust the percentage as needed */
+max-width: 80%;
+/* Adjust the percentage as needed */
 height: auto;
 }
 }
@@ -166,33 +180,93 @@ margin-bottom: 20px;
 }
 
 .client {
-width: 100%; /* Adjust the width as needed */
+width: 100%;
 }
 
 .client img {
 max-width: 50%;
 height: auto;
-border-radius: 10px;
+border-radius: 30px;
 }
 
 .client img:hover {
 transition: 0.3s ease;
 transform: scale(1.11);
 cursor: pointer;
-
 }
 
-
-.client p {
-margin-top: 10px;
-}
-
-#our-mission img,
-#services img {
+#our-mission img {
 max-width: 100%;
+max-height: 50%;
 border-radius: 8px;
 }
 
+#services img {
+max-width: 350px;
+max-height: 175px;
+border-radius: 8px
+}
+
+/* Service Package section */
+#service-package {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+background-color: #000000;
+color: #ffffff;
+}
+
+#service-package h2 {
+color: #019ee3;
+}
+
+.service-package-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
+
+.service-package-item {
+width: 30%;
+margin: 20px 0;
+text-align: center;
+}
+
+.service-package-item h3 {
+color: #019ee3;
+}
+
+.service-package-item .service-package-content {
+padding: 8px;
+}
+
+.service-package-item .service-package-image-container {
+border: 2px solid #019ee3;
+border-radius: 8px;
+overflow: hidden;
+transition: border-color 0.3s ease;
+}
+
+.service-package-item:hover .service-package-image-container {
+border-color: #ffffff;
+cursor: pointer;
+transform: scale(1.11);
+transition: 0.3s ease;
+}
+
+.service-package-item img {
+width: 100%;
+height: 150px;
+border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+.service-package-item {
+width: 100%;
+}
+}
 
 </style>
 </head>
@@ -220,29 +294,42 @@ border-radius: 8px;
 <p>Our services cover everything needed to help you establish an online presence. Websites, content, and social media dominate in today's competitive market, and we know that without having these things done correctly there is a massive loss of potential and opportunity.</p>
 <div class="service-container">
 <article class="service-item">
+<div class="service-image-container">
 <a href="web.html">
 <img src="Web_dev_img.jpg" alt="Web Development Image">
 </a>
+<div class="service-content">
 <h3>Web Development</h3>
-<p>Establish your online presence with our free web development service.</p>
+<p>Craft your online identity with our aesthetic design.</p>
 <p style="color:green;">Free service available</p>
+</div>
+</div>
 </article>
 <article class="service-item">
+<div class="service-image-container">
 <a href="content.html">
 <img src="Service_1.jpg" alt="Content Creation Image">
 </a>
+<div class="service-content">
 <h3>Content Creation</h3>
-<p>Captivate your customers with compelling content tailored to your brand.</p>
+<p>Engage your audience with captivating content.</p>
 <p style="color:red;">Available 2025</p>
+</div>
+</div>
 </article>
 <article class="service-item">
+<div class="service-image-container">
 <a href="social.html">
 <img src="Social_media.jpg" alt="Social Media Management Image">
 </a>
+<div class="service-content">
 <h3>Social Media Management</h3>
-<p>Let us handle your social media presence, ensuring that your brand remains active and engaging across platforms.</p>
+<p>Expand your online influence effortlessly.</p>
 <p style="color:red;">Coming soon</p>
+</div>
+</div>
 </article>
+</div>
 </section>
 
 <section id="previous-clients">
@@ -252,8 +339,8 @@ border-radius: 8px;
 <div class="client">
 <a href="https://www.seagrassgallery.co.nz/"><img src="Seagrass_logo.png" alt="seagrass gallery logo"></a>
 </div>
+</div>
 </section>
-
 
 <br>
 <!-- Contact section -->
@@ -290,6 +377,7 @@ border-radius: 8px;
 
 <script>
 window.dataLayer = window.dataLayer || [];
+
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-CKXB3BKCLN');
@@ -325,3 +413,4 @@ setInterval(nextClient, 10000); // Change 5000 to your desired interval
 </body>
 
 </html>
+
